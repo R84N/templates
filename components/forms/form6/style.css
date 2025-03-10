@@ -1,0 +1,104 @@
+.form6 .contact_taital {
+  width: 100%;
+  float: left;
+  color: #0b0b0b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 46px;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.form6 .contact_taital::after {
+  content: "";
+  border: 10px solid #c2a20e;
+  border-radius: 12px;
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  right: 45%;
+  top: 55px;
+}
+
+.form6 .form-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.form6 .col-md-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form6 .mail_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #989999;
+  border: 0px;
+  border-bottom: 1px solid #dab509;
+  background-color: transparent !important;
+  padding: 50px 30px 10px 0px;
+  font-size: 16px;
+}
+
+.form6 .mail_text:focus {
+  outline: none;
+}
+
+.form6 .map_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #eac208;
+  padding-top: 50px;
+}
+
+.form6 .map_text_1 {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.form6 .send_bt {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+}
+
+.form6 .send_bt a {
+  width: 30%;
+  float: left;
+  background-color: #eac208;
+  color: #fefeff;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 16px;
+}
+
+.form6 .massage-bt {
+  color: #696868;
+  width: 100%;
+  height: 110px;
+  font-size: 18px;
+  border-bottom: 1px solid #dab509 !important;
+  background-color: transparent !important;
+  padding: 75px 30px 0px 0px;
+  border: 0px;
+  overflow: auto;
+  resize: vertical;
+}
+
+.form6 .call_text_left {
+  padding-left: 20px;
+}

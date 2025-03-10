@@ -1,0 +1,89 @@
+.firstComponent2 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 250px 120px 150px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.firstComponent2:after {
+  content: "";
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/slider-left-dec.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.firstComponent2 .left-content h1 {
+  z-index: 2;
+  position: relative;
+  font-weight: 700;
+  line-height: 70px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(33, 37, 41);
+  margin-top: 50px;
+}
+
+.firstComponent2 .left-content p {
+  margin-bottom: 45px;
+  color: #2a2a2a;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  z-index: 2;
+}
+
+.firstComponent2 .left-content .white-button a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #4b8ef1 !important;
+  text-transform: capitalize;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all 0.5s;
+  background-color: #4b8ef1;
+  color: #fff !important;
+}
+
+.firstComponent2 .left-content .white-button {
+  display: inline-block;
+}
+
+.firstComponent2 .left-content .first-button {
+  margin-right: 15px;
+}
+
+.firstComponent2 .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.firstComponent2 .col-lg-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.firstComponent2 .col-lg-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.firstComponent2 .right-image img {
+  max-width: 710px;
+}

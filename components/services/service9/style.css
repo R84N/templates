@@ -1,0 +1,96 @@
+.section9 {
+  width: 100%;
+  float: left;
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/service-bg.png);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+}
+
+.section9 .services_text {
+  width: 100%;
+  float: left;
+  font-size: 46px;
+  color: #fefeff;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.section9 .services_text::after {
+  content: "";
+  border: 10px solid #c2a20e;
+  border-radius: 12px;
+  position: absolute;
+  width: 120px;
+  text-align: center;
+  right: 44%;
+  top: 55px;
+}
+
+.section9 .dolor_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #fefeff;
+  text-align: center;
+  margin-left: 0px;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.section9 .service_section_2 {
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+}
+
+.section9 .grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section9 .grid-element {
+  text-align: center;
+}
+
+.section9 .classic_text {
+  width: 100%;
+  float: left;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 0px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.section9 .consectetur_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 0px;
+  margin: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.section9 .read_bt {
+  width: 100%;
+}
+
+.section9 .read_bt a {
+  width: 100%;
+
+  font-size: 16px;
+  color: #1c1c1c;
+  background-color: #c2a20e;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 11px 23px;
+}

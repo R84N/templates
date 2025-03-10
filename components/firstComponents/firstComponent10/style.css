@@ -1,0 +1,73 @@
+.firstComponent10 {
+  height: 110vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/hero-bg.jpg);
+  background-size: cover;
+}
+
+.firstComponent10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #171819;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.firstComponent10 .content {
+  position: relative;
+  z-index: 1;
+}
+
+.firstComponent10 p {
+  font-size: 22px;
+  color: #909090;
+  text-align: center;
+}
+
+.firstComponent10 h1 {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.firstComponent10 .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstComponent10 .buttons a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 24px;
+  transition: 0.3;
+}
+
+.firstComponent10 .buttons a:first-child {
+  color: #fff;
+}
+
+.firstComponent10 .buttons a:first-child:hover {
+  color: #f13a11;
+}
+
+.firstComponent10 .buttons a:last-child {
+  color: #f13a11;
+  border: 1px solid #f13a11;
+}
+
+.firstComponent10 .buttons a:last-child:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+}

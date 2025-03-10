@@ -1,0 +1,120 @@
+.service8 .heading_container2 {
+  text-align: center;
+}
+
+.service8 .heading_container2 h2 {
+  position: relative;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.service8 .heading_container2 p {
+  padding-bottom: 1rem;
+}
+
+.service8 .flex__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service8 .flex__container .box {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.service8 .flex__container .box a {
+  color: #000;
+}
+
+.service8 .flex__container .box:hover,
+.service8 .flex__container .box:hover a {
+  color: #fff;
+}
+
+.service8 .flex__container .box:hover img {
+  filter: invert(1);
+}
+
+.service8 .flex__container .box::before {
+  content: "";
+  width: 275px;
+  height: 275px;
+  position: absolute;
+  right: -137.5px;
+  bottom: -137.5px;
+  background-color: lighten(#7335b7, 52%);
+
+  z-index: -1;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.service8 .flex__container .box:hover::before {
+  transform: scale(5);
+  background-color: #7335b7 !important;
+}
+
+.service8 .flex__container .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 125px;
+  border-radius: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.service8 .flex__container .box .img-box img {
+  width: 75px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.service8 .flex__container .box .detail-box h5 {
+  font-weight: bold;
+  position: relative;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.service8 .flex__container .box .detail-box p {
+  margin-bottom: 1rem;
+}
+
+.service8 .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.service8 .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #7335b7;
+  color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #7335b7;
+}

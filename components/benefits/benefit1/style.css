@@ -1,0 +1,69 @@
+.benefit1 {
+  background: linear-gradient(180deg, #f0faff 8.93%, rgba(247, 236, 231, 0.604143) 39.03%, rgba(224, 234, 247, 0.52) 75.5%, rgba(212, 251, 254, 0) 100%);
+  padding: 75px 0;
+}
+
+.benefit1 h2 {
+  background: linear-gradient(90deg, rgba(13, 0, 102, 1) 0%, rgba(38, 132, 252, 1) 100%);
+  transition: all 0.3sease;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  max-width: 1200px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.benefit1 .subtitle {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+.benefit1 .flex-wrapper.blocks {
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.benefit1 .flex-wrapper {
+  flex-wrap: wrap;
+  gap: 30px;
+  display: flex;
+}
+
+.benefit1 .flex-wrapper.blocks .card_block {
+  color: #fff;
+  border-radius: 20px;
+  width: calc(25% - 8px);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 26px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit1 .flex-wrapper .card {
+  padding: 73px 52px 26px 65px;
+  width: calc(50% - 15px);
+  box-shadow: 0.643px 0.766px 0px 0px rgba(12, 34, 66, 0.09), 10.285px 12.257px 38px 0px rgba(12, 34, 66, 0.13);
+  border-radius: 20px;
+}
+
+.benefit1 h3 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}

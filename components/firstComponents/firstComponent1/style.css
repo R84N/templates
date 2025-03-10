@@ -1,0 +1,106 @@
+.firstComponent1 {
+  width: 100%;
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/banner-bg.png);
+  height: auto;
+  background-size: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+.firstComponent1 .logo {
+  width: 100%;
+
+  text-align: center;
+  padding: 20px 0px 50px 0px;
+}
+
+.firstComponent1 .mobile_menu {
+  width: 100%;
+
+  display: none;
+}
+
+.firstComponent1 .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.firstComponent1 .menu_main {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.firstComponent1 .menu_main ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: inline-flex;
+}
+
+.firstComponent1 .menu_main li {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.firstComponent1 .menu_main li a {
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.firstComponent1 .banner_taital {
+  width: 100%;
+
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Righteous", Regular;
+}
+
+.firstComponent1 .banner_text {
+  width: 63%;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.firstComponent1 .read_bt a {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #141414;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 30px;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.firstComponent1 .read_bt {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.firstComponent1 .banner_section {
+  padding-bottom: 305px;
+  padding-top: 90px;
+}

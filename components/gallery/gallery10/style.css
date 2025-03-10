@@ -1,0 +1,124 @@
+.gallery10 {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.gallery10 {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.gallery10 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery10 .subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.gallery10 .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery10 .team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery10 .team-member:hover {
+  transform: translateY(-10px);
+}
+
+.gallery10 .member-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gallery10 .member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery10 .overlay {
+  position: absolute;
+  top: 100%; /* Start below the image */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 115, 177, 0.9); /* Semi-transparent LinkedIn blue */
+  transition: top 0.4s ease, opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0; /* Start invisible */
+  border-radius: 10px; /* Match the card's border radius */
+}
+
+.gallery10 .team-member:hover .overlay {
+  top: 0; /* Slide up to cover the image */
+  opacity: 1; /* Make it visible */
+}
+
+.gallery10 .overlay-content {
+  color: #fff;
+  transform: translateY(20px); /* Start slightly below */
+  transition: transform 0.4s ease;
+}
+
+.gallery10 .team-member:hover .overlay-content {
+  transform: translateY(0); /* Move to original position */
+}
+
+.gallery10 .overlay-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600; /* Make the name stand out */
+}
+
+.gallery10 .overlay-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #f4f4f4; /* Light gray for better readability */
+}
+
+.gallery10 .overlay-content .bio {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.5; /* Improve readability */
+}
+
+.gallery10 .social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery10 .social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.gallery10 .social-links a:hover {
+  color: #f4f4f4;
+  transform: scale(1.2); /* Slightly enlarge icons on hover */
+}

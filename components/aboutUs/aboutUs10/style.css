@@ -1,0 +1,74 @@
+.aboutUs10 {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  color: #333;
+}
+.aboutUs10 .about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.aboutUs10 .about-text h2 {
+  font-size: 36px;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+.aboutUs10 .about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+.aboutUs10 .about-text .cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4299e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.aboutUs10 .about-text .cta-button:hover {
+  background-color: #3182ce;
+}
+.aboutUs10 .about-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.aboutUs10 .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aboutUs10 .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.aboutUs10 .card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.aboutUs10 .card h3 {
+  font-size: 20px;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+.aboutUs10 .card p {
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.6;
+}

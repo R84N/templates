@@ -1,0 +1,128 @@
+.services3 {
+  padding-top: 130px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.services3 h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services3 a {
+  color: #0a58ca;
+}
+
+.services3::before {
+  content: "";
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/services-right-dec-1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 50%;
+  top: 850px;
+  width: 1136px;
+  height: 244px;
+  z-index: 0;
+  transform: translateX(50%);
+}
+
+.services3 .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -12px;
+  gap: 1.5rem;
+}
+
+.section-heading img {
+  margin: 20px auto;
+  display: block;
+}
+
+.services3 .section-heading h2 {
+  color: #2a2a2a;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.services3 .section-heading h2 em {
+  font-style: normal;
+  color: #4b8ef1;
+  font-weight: 700;
+}
+
+.services3 .main-text {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #afafaf;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+
+.services3 .service-item {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  transition: all 0.3s;
+}
+
+.services3 .service-item p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #afafaf;
+
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+
+.services3 .service-item .icon {
+  margin-left: 0px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+}
+
+.first-service .icon {
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/service-icon-01.png);
+}
+
+.second-service .icon {
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/service-icon-02.png);
+}
+
+.third-service .icon {
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/service-icon-03.png);
+}
+
+.fourth-service .icon {
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/service-icon-04.png);
+}
+
+.services3::after {
+  content: "";
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/services-left-dec.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  width: 261px;
+  height: 368px;
+  z-index: 0;
+}

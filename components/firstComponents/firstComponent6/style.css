@@ -1,0 +1,51 @@
+.firstComponent6 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/1900x1000.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstComponent6 a,
+.firstComponent6 h1,
+.firstComponent6 h2,
+.firstComponent6 a {
+  color: #fff;
+}
+
+.firstComponent6 h1 {
+  margin-bottom: 20px;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.firstComponent6 h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.firstComponent6 p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #ffffff70;
+  font-size: 18px;
+}
+
+.firstComponent6 .img-box {
+  max-width: 100px;
+}
+
+.firstComponent6 img {
+  width: 100px;
+}
+
+.firstComponent6 a {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0px;
+  font-size: 22px;
+  color: #fff;
+}

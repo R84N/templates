@@ -1,0 +1,53 @@
+.firstComponent9 {
+  background: #7a60ff;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  height: 696px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstComponent9 .flex-container {
+  display: flex;
+}
+
+.firstComponent9 h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 50px;
+}
+
+.firstComponent9 .top-text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.firstComponent9 .bottom-text {
+  margin: 40px 0px;
+  max-width: 650px;
+  padding-right: 220px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.firstComponent9 .right,
+.firstComponent9 .left {
+  width: 50%;
+}
+
+.firstComponent9 .right {
+  padding-left: 80px;
+}
+
+.firstComponent9 .buttons img {
+  width: 150px;
+  border-radius: 7px;
+}
+
+.firstComponent9 .buttons {
+  display: flex;
+  gap: 15px;
+}

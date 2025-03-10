@@ -1,0 +1,276 @@
+.aboutUs5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.aboutUs5 .about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.aboutUs5 .about-header h2 {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.aboutUs5 .about-header h2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #4a5568;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutUs5 .about-header p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* About content styles */
+.aboutUs5 .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.aboutUs5 .about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutUs5 .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.aboutUs5 .about-image img:hover {
+  transform: scale(1.02);
+}
+
+.aboutUs5 .about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutUs5 .about-text h3 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.aboutUs5 .about-text p {
+  margin-bottom: 15px;
+  color: #4a5568;
+}
+
+/* Values section */
+.aboutUs5 .values-section {
+  margin-top: 60px;
+}
+
+.aboutUs5 .values-section h3 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutUs5 .values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.aboutUs5 .value-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutUs5 .value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs5 .value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4a5568;
+}
+
+.aboutUs5 .aboutUs5 .value-card h4 {
+  font-size: 1.3rem;
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.aboutUs5 .value-card p {
+  color: #4a5568;
+}
+
+/* Team section */
+.aboutUs5 .team-section {
+  margin-top: 80px;
+}
+
+.aboutUs5 .team-section h3 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.aboutUs5 .team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.aboutUs5 .team-member {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.aboutUs5 .team-member:hover {
+  transform: translateY(-5px);
+}
+
+.aboutUs5 .member-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.aboutUs5 .member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.aboutUs5 .team-member:hover .member-image img {
+  transform: scale(1.05);
+}
+
+.aboutUs5 .member-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutUs5 .member-info h4 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+
+.aboutUs5 .member-info p.position {
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.aboutUs5 .member-info p.bio {
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.aboutUs5 .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.aboutUs5 .social-links a {
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.aboutUs5 .social-links a:hover {
+  color: #2d3748;
+}
+
+/* CTA section */
+.aboutUs5 .cta-section {
+  margin-top: 80px;
+  text-align: center;
+  background-color: #2d3748;
+  padding: 60px 30px;
+  border-radius: 8px;
+  color: white;
+}
+
+.aboutUs5 .cta-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.aboutUs5 .cta-section p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #e2e8f0;
+}
+
+.aboutUs5 .cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: white;
+  color: #2d3748;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.aboutUs5 .cta-button:hover {
+  background-color: #f7fafc;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .aboutUs5 .about-header h2 {
+    font-size: 2rem;
+  }
+
+  .aboutUs5 .about-content {
+    flex-direction: column;
+  }
+
+  .aboutUs5 .value-card,
+  .aboutUs5 .team-member {
+    min-width: 100%;
+  }
+}

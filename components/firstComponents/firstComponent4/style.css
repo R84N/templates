@@ -1,0 +1,83 @@
+.firstComponent4 {
+  background-image: url(http://localhost/templates/wp-content/uploads/2025/03/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstComponent4 .row {
+  display: flex;
+}
+
+.firstComponent4 .img-box img {
+  width: 100%;
+  -webkit-animation: upDown 5s infinite;
+  animation: upDown 5s infinite;
+  max-width: 555px;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-45px);
+  }
+
+  50% {
+    transform: translateY(45px);
+  }
+
+  100% {
+    transform: translateY(-45px);
+  }
+}
+
+.firstComponent4 .detail-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.firstComponent4 .detail-box p {
+  color: #fefefe;
+  font-size: 14px;
+}
+
+.firstComponent4 .detail-box .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -5px;
+  margin-top: 25px;
+}
+
+.firstComponent4 .detail-box .btn-box .btn1 {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #00bbf0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin: 5px;
+  text-align: center;
+  width: 165px;
+}
+
+.firstComponent4 .detail-box {
+  display: flex;
+
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstComponent4 .detail-box p {
+  line-height: 18px;
+  font-size: 18px;
+  width: 555px;
+}

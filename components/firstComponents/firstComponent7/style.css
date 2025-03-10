@@ -1,0 +1,40 @@
+.firstComponent7 {
+  height: 100vh;
+}
+
+.firstComponent7 .container-flex {
+  display: flex;
+}
+
+.firstComponent7 h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.firstComponent7 .left,
+.firstComponent7 .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstComponent7 p {
+  margin: 35px 0 50px 0;
+}
+
+.firstComponent7 a {
+  padding: 12px 32px;
+  border-radius: 15px;
+  background-color: #f8d92b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 173px;
+}
+
+.firstComponent7 img {
+  width: 100%;
+}

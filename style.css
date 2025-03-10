@@ -1,0 +1,106 @@
+/*
+Theme Name: Templates from internet
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin-bottom: 1rem;
+}
+
+.disabled {
+  pointer-events: none;
+  color: #fff !important;
+  background: gray !important;
+  background-color: gray !important;
+  border-color: gray !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #1b1164, #3b2fa2);
+}
+
+#page.site {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.header {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header .header__container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header a {
+  color: #000;
+  position: relative;
+}
+
+.header a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  bottom: -3px;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+}
+
+.header a:hover::after {
+  width: 100%;
+}

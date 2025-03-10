@@ -1,0 +1,348 @@
+/* About section styles */
+.aboutUs6 {
+  padding: 100px 0;
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.aboutUs6 .section-title {
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.aboutUs6 .section-title h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  display: inline-block;
+}
+
+.aboutUs6 .section-title h2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: #6c63ff;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutUs6 .section-title p {
+  max-width: 650px;
+  margin: 25px auto 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Mission and vision */
+.aboutUs6 .mission-vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.aboutUs6 .mission-card,
+.aboutUs6 .vision-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutUs6 .mission-card:hover,
+.aboutUs6 .vision-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs6 .card-header {
+  padding: 25px 30px;
+  background: #6c63ff;
+  color: white;
+}
+
+.aboutUs6 .vision-card .card-header {
+  background: #ff6b6b;
+}
+
+.aboutUs6 .card-header h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aboutUs6 .card-content {
+  padding: 30px;
+}
+
+.aboutUs6 .card-content p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Company story */
+.aboutUs6 .company-story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .aboutUs6 .company-story {
+    grid-template-columns: 1fr;
+  }
+}
+
+.aboutUs6 .story-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs6 .story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.aboutUs6 .story-image:hover img {
+  transform: scale(1.05);
+}
+
+.aboutUs6 .story-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.aboutUs6 .story-image:hover::after {
+  opacity: 1;
+}
+
+.aboutUs6 .story-content h3 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.aboutUs6 .story-content h3::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background: #6c63ff;
+  bottom: 0;
+  left: 0;
+}
+
+.aboutUs6 .story-content p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.aboutUs6 .year-highlight {
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+/* Team section */
+.aboutUs6 .team-section {
+  margin-bottom: 80px;
+}
+
+.aboutUs6 .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.aboutUs6 .team-member {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.aboutUs6 .team-member:hover {
+  transform: translateY(-10px);
+}
+
+.aboutUs6 .member-photo {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.aboutUs6 .member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.aboutUs6 .team-member:hover .member-photo img {
+  transform: scale(1.1);
+}
+
+.aboutUs6 .member-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.aboutUs6 .member-info h4 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.aboutUs6 .aboutUs6 .member-info .role {
+  color: #6c63ff;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.aboutUs6 .member-info p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.aboutUs6 .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.aboutUs6 .social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.aboutUs6 .social-links a:hover {
+  background: #6c63ff;
+  color: white;
+}
+
+/* Stats section */
+.aboutUs6 .stats-section {
+  background: linear-gradient(135deg, #6c63ff 0%, #5a52d5 100%);
+  padding: 80px 0;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 80px;
+}
+
+.aboutUs6 .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.aboutUs6 .stat-item h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.aboutUs6 .stat-item p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Contact CTA */
+.aboutUs6 .contact-cta {
+  text-align: center;
+  background: #fff;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.aboutUs6 .contact-cta h3 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.aboutUs6 .contact-cta p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.aboutUs6 .cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+}
+
+.aboutUs6 .cta-button:hover {
+  background: #5a52d5;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .aboutUs6 .section-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .aboutUs6 .story-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .aboutUs6 .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutUs6 .contact-cta {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUs6 .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutUs6 .mission-vision {
+    grid-template-columns: 1fr;
+  }
+}

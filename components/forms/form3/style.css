@@ -1,0 +1,50 @@
+.form3 .heading_container {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.form3 .heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.form3 .form_container {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: auto;
+}
+
+.form3 .form_container input {
+  width: 100%;
+  border: 1px solid #b0b0b0;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  background-color: transparent;
+  outline: none;
+  color: #101010;
+  font-size: 16px;
+}
+
+.form3 .form_container input.message-box {
+  height: 120px;
+}
+
+.form3 .form_container button {
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 65px;
+  display: block;
+  background-color: #ff4646;
+  color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #ff4646;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+}

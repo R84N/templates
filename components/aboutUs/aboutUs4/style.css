@@ -1,0 +1,119 @@
+.aboutUs4 .content-section {
+  padding: 140px 20px;
+  width: 100%;
+  color: #132a40;
+  padding-bottom: 129px;
+}
+
+.aboutUs4 .about-us__content {
+  max-width: 500px;
+  width: 36%;
+  margin-right: 100px;
+  margin-left: 40px;
+  margin-top: 3px;
+}
+
+.aboutUs4 .badge {
+  color: #1596dd;
+  font-size: 14px;
+  background-color: rgba(21, 150, 221, 0.0705882353);
+  display: inline-block;
+  padding: 6px 10px;
+  text-wrap: nowrap;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 6px;
+}
+
+.aboutUs4 h2 {
+  font-size: 40px;
+  line-height: 54px;
+  display: block;
+  margin: 14px 0 31px;
+  font-weight: 500;
+  color: #132a40;
+  width: 100%;
+}
+
+.aboutUs4 .about-us__content-text {
+  max-width: 400px;
+  margin-bottom: 11px;
+  line-height: 26px;
+  margin-top: -1px;
+}
+
+.aboutUs4 .about-us__content-text {
+  max-width: 400px;
+  margin-bottom: 11px;
+  line-height: 26px;
+  margin-top: -1px;
+}
+
+.aboutUs4 .container__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.aboutUs4 .mobile-img {
+  display: none;
+}
+
+.aboutUs4 .big-section-img {
+  height: 100%;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.aboutUs4 .big-section-img img {
+  max-width: 550px !important;
+  width: 100%;
+  max-width: unset;
+}
+
+.aboutUs4 .about-us__content {
+  max-width: 500px;
+  width: 36%;
+  margin-right: 100px;
+  margin-left: 40px;
+  margin-top: 3px;
+}
+
+.aboutUs4 .additional {
+  margin-top: 120px;
+}
+
+.aboutUs4 .our-mission {
+  max-width: 516px;
+  margin-right: 70px;
+}
+
+.aboutUs4 .our-mission h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 30px 0 20px;
+  line-height: 34px;
+}
+
+.aboutUs4 strong {
+  font-weight: 600;
+}
+
+.aboutUs4 .our-mission ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.aboutUs4 .our-mission ul {
+  list-style: none;
+}
+
+.aboutUs4 .our-mission__description {
+  margin-top: 20px;
+}

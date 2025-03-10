@@ -1,0 +1,327 @@
+.benefit8 {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.benefit8 {
+  padding: 100px 0;
+  background-color: #f5f7fa;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background pattern */
+.benefit8 .pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  background-image: linear-gradient(30deg, #5352ed 12%, transparent 12.5%, transparent 87%, #5352ed 87.5%, #5352ed),
+    linear-gradient(150deg, #5352ed 12%, transparent 12.5%, transparent 87%, #5352ed 87.5%, #5352ed), linear-gradient(30deg, #5352ed 12%, transparent 12.5%, transparent 87%, #5352ed 87.5%, #5352ed),
+    linear-gradient(150deg, #5352ed 12%, transparent 12.5%, transparent 87%, #5352ed 87.5%, #5352ed),
+    linear-gradient(60deg, #5352ed77 25%, transparent 25.5%, transparent 75%, #5352ed77 75%, #5352ed77);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+}
+
+.benefit8 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.benefit8 .section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.benefit8 .section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.benefit8 .section-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 4px;
+  background: linear-gradient(90deg, #5352ed, #ff6b81);
+  border-radius: 2px;
+}
+
+.benefit8 .section-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.benefit8 .choose-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.benefit8 .choose-us-tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.benefit8 .tab-button {
+  padding: 15px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.benefit8 .tab-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #5352ed, #ff6b81);
+  transition: all 0.3s ease;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.benefit8 .tab-button:hover::before,
+.benefit8 .tab-button:focus::before {
+  width: 100%;
+}
+
+.benefit8 .tab-button:hover,
+.benefit8 .tab-button:focus {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Using CSS-only tabs with the :target selector */
+.benefit8 .tab-content {
+  display: none;
+  width: 100%;
+}
+
+.benefit8 .tab-content:target {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Default tab to show when no tab is targeted */
+#tab1:not(:target):not(:target) ~ #tab1-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.benefit8 .reason-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.benefit8 .reason-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.benefit8 .reason-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #5352ed, #ff6b81);
+  z-index: 2;
+}
+
+.benefit8 .card-icon {
+  width: 80px;
+  height: 80px;
+  margin: 30px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f5f7fa;
+  position: relative;
+}
+
+.benefit8 .card-icon::before,
+.benefit8 .card-icon::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.benefit8 .card-icon::before {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(83, 82, 237, 0.1);
+}
+
+.benefit8 .card-icon::after {
+  width: 40px;
+  height: 40px;
+}
+
+/* Custom icons for each card */
+.benefit8 .icon-expertise::after {
+  background: linear-gradient(135deg, #5352ed, #3742fa);
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.benefit8 .icon-quality::after {
+  background: linear-gradient(135deg, #ff6b81, #ff4757);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.benefit8 .icon-innovation::after {
+  background: linear-gradient(135deg, #1e90ff, #70a1ff);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.benefit8 .icon-support::after {
+  background: linear-gradient(135deg, #ffa502, #ff7f50);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.benefit8 .icon-value::after {
+  background: linear-gradient(135deg, #2ed573, #7bed9f);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.benefit8 .icon-results::after {
+  background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.benefit8 .card-content {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.benefit8 .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.benefit8 .card-description {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.benefit8 .card-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.benefit8 .stat {
+  text-align: center;
+}
+
+.benefit8 .stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #5352ed;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.benefit8 .stat-label {
+  font-size: 0.85rem;
+  color: #95a5a6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.benefit8 .learn-more-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(90deg, #5352ed, #ff6b81);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.benefit8 .learn-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .benefit8 .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .benefit8 .tab-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .benefit8 .reason-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,438 @@
+.gallery2 {
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+.gallery2 {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.gallery2 .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery2 .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.gallery2 .section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.gallery2 .section-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+}
+
+.gallery2 .section-header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Gallery Controls */
+.gallery2 .gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery2 .view-options {
+  display: flex;
+  gap: 15px;
+}
+
+.gallery2 .view-option {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  color: #495057;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery2 .view-option:hover {
+  background-color: #f1f3f5;
+}
+
+.gallery2 .view-option.active {
+  background-color: #ff7e5f;
+  color: #fff;
+  border-color: #ff7e5f;
+}
+
+.gallery2 .filter-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery2 .filter-option {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 30px;
+  color: #495057;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery2 .filter-option:hover {
+  background-color: #f1f3f5;
+}
+
+.gallery2 .filter-option.active {
+  background-color: #212529;
+  color: #fff;
+  border-color: #212529;
+}
+
+/* Gallery Container */
+.gallery2 .gallery-container {
+  position: relative;
+}
+
+/* CSS-only tabs for different views */
+.gallery2 .gallery-view {
+  display: none;
+}
+
+.gallery2 #grid-view:target,
+.gallery2 #masonry-view:target,
+.gallery2 #carousel-view:target {
+  display: block;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Default view when no hash is present */
+.gallery2 .gallery-view:not(:target):not(:target) ~ #grid-view {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Grid View */
+.gallery2 .grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery2 .gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery2 .gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery2 .gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery2 .gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+.gallery2 .gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #fff;
+}
+
+.gallery2 .gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery2 .gallery-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease 0.1s;
+}
+
+.gallery2 .gallery-category {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease 0.2s;
+}
+
+.gallery2 .gallery-item:hover .gallery-title,
+.gallery2 .gallery-item:hover .gallery-category {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Masonry View */
+.gallery2 .masonry-gallery {
+  columns: 3 200px;
+  column-gap: 20px;
+}
+
+.gallery2 .masonry-gallery .gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  aspect-ratio: auto;
+}
+
+/* Carousel View */
+.gallery2 .carousel-gallery {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery2 .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.gallery2 .carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.gallery2 .carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery2 .carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  color: #fff;
+}
+
+.gallery2 .carousel-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gallery2 .carousel-description {
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+.gallery2 .carousel-nav {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.gallery2 .carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery2 .carousel-dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery2 .carousel-dot.active {
+  background-color: #fff;
+}
+
+/* CSS-only carousel using the :target selector */
+.gallery2 .carousel-slide {
+  display: none;
+}
+
+.gallery2 #slide1:target,
+.gallery2 #slide2:target,
+.gallery2 #slide3:target,
+.gallery2 #slide4:target,
+.gallery2 #slide5:target {
+  display: block;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Default slide when no hash is present */
+.gallery2 .carousel-slide:not(:target):not(:target) ~ #slide1 {
+  display: block;
+}
+
+/* Lightbox */
+.gallery2 .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.gallery2 .lightbox:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery2 .lightbox-content {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.gallery2 .lightbox-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gallery2 .lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.gallery2 .lightbox-close:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.gallery2 .lightbox-caption {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.gallery2 .lightbox-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.gallery2 .lightbox-category {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .gallery2 .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery2 .masonry-gallery {
+    columns: 2;
+  }
+
+  .gallery2 .gallery-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery2 .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .gallery2 .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery2 .masonry-gallery {
+    columns: 1;
+  }
+
+  .gallery2 .carousel-gallery {
+    height: 400px;
+  }
+
+  .gallery2 .carousel-title {
+    font-size: 1.5rem;
+  }
+}

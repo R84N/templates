@@ -1,0 +1,98 @@
+/* Basic Reset */
+
+.gallery8 {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.gallery8 {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.gallery8 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery8.subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.gallery8 .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery8 .team-member {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery8 .team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery8 .team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery8 .member-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery8 .member-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.gallery8 .member-info p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.gallery8 .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery8 .social-links a {
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.gallery8 .social-links a:hover {
+  color: #0073b1; /* LinkedIn blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery8 .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery8 .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
