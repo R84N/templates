@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.firstcomponent19 {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.6;
+}
+
+.firstcomponent19 {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 5rem 2rem;
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.firstcomponent19 .banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.firstcomponent19 .banner-content {
+  flex: 1;
+}
+
+.firstcomponent19 .banner-image {
+  flex: 1;
+  position: relative;
+  min-height: 300px;
+}
+
+.firstcomponent19 .banner-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #000;
+  position: relative;
+  display: inline-block;
+}
+
+.firstcomponent19 .banner-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #fd7e14;
+}
+
+.firstcomponent19 .banner-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #495057;
+  max-width: 500px;
+}
+
+.firstcomponent19 .banner-cta {
+  display: inline-block;
+  background-color: #212529;
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 0;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  border: 2px solid #212529;
+}
+
+.firstcomponent19 .banner-cta:hover {
+  background-color: transparent;
+  color: #212529;
+}
+
+.firstcomponent19 .banner-rectangle {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 2px solid #fd7e14;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+}
+
+.firstcomponent19 .banner-square {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #e9ecef;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media (max-width: 992px) {
+  .firstcomponent19 .banner-container {
+    flex-direction: column;
+  }
+
+  .firstcomponent19 .banner-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

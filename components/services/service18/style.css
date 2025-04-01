@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Chakra+Petch:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.services18 {
+  font-family: "Chakra Petch", sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.services18 {
+  position: relative;
+  padding: 8rem 0;
+  background: linear-gradient(125deg, #0c0c1d, #1a0b2e);
+  overflow: hidden;
+}
+
+.services18 .retro-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(162, 89, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(162, 89, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  transform: perspective(500px) rotateX(60deg);
+  transform-origin: center top;
+  z-index: 1;
+}
+
+.services18 .retro-grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, #0c0c1d 100%);
+}
+
+.services18 .sun {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff6b6b, #ffa06b);
+  top: -150px;
+  right: -150px;
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.services18 .mountains {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.services18 .mountain {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 1;
+}
+
+.services18 .mountain-1 {
+  left: 0%;
+  border-width: 0 200px 200px 0;
+  border-color: transparent rgba(162, 89, 255, 0.2) transparent transparent;
+}
+
+.services18 .mountain-2 {
+  left: 20%;
+  border-width: 0 300px 300px 100px;
+  border-color: transparent rgba(255, 106, 151, 0.2) transparent transparent;
+}
+
+.services18 .mountain-3 {
+  right: 10%;
+  border-width: 0 200px 250px 300px;
+  border-color: transparent rgba(18, 194, 233, 0.2) transparent transparent;
+}
+
+.services18 .services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.services18 .services-header {
+  text-align: center;
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.services18 .services-subtitle {
+  display: inline-block;
+  font-family: "VT323", monospace;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #a259ff;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #a259ff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 0 10px #a259ff;
+}
+
+.services18 .services-subtitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(162, 89, 255, 0.3), transparent);
+  animation: shine 3s infinite;
+}
+
+.services18 .services-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  text-shadow: 5px 5px 0px #ff6ad5;
+}
+
+.services18 .services-title .glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.services18 .services-title .glitch::before,
+.services18 .services-title .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.services18 .services-title .glitch::before {
+  color: #0ff;
+  z-index: -1;
+  animation: glitch-anim-1 5s infinite linear alternate-reverse;
+}
+
+.services18 .services-title .glitch::after {
+  color: #f0f;
+  z-index: -2;
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+.services18 .services-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.services18 .services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  position: relative;
+}
+
+.services18 .service-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services18 .service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(125deg, rgba(162, 89, 255, 0.2) 0%, rgba(255, 106, 151, 0.2) 50%, rgba(18, 194, 233, 0.2) 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+.services18 .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(162, 89, 255, 0.3), 0 0 40px rgba(162, 89, 255, 0.1);
+  border-color: rgba(162, 89, 255, 0.5);
+}
+
+.services18 .service-card:hover::before {
+  opacity: 1;
+}
+
+.services18 .service-card:nth-child(2n):hover {
+  box-shadow: 0 0 20px rgba(255, 106, 151, 0.3), 0 0 40px rgba(255, 106, 151, 0.1);
+  border-color: rgba(255, 106, 151, 0.5);
+}
+
+.services18 .service-card:nth-child(3n):hover {
+  box-shadow: 0 0 20px rgba(18, 194, 233, 0.3), 0 0 40px rgba(18, 194, 233, 0.1);
+  border-color: rgba(18, 194, 233, 0.5);
+}
+
+.services18 .service-icon-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services18 .service-icon-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #a259ff;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.services18 .service-card:nth-child(2n) .service-icon-border {
+  border-color: #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n) .service-icon-border {
+  border-color: #12c2e9;
+}
+
+.services18 .service-card:hover .service-icon-border {
+  transform: rotate(45deg);
+  border-radius: 50%;
+  box-shadow: 0 0 15px #a259ff;
+}
+
+.services18 .service-card:nth-child(2n):hover .service-icon-border {
+  box-shadow: 0 0 15px #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n):hover .service-icon-border {
+  box-shadow: 0 0 15px #12c2e9;
+}
+
+.services18 .service-icon {
+  position: relative;
+  font-size: 2.5rem;
+  color: #a259ff;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.services18 .service-card:nth-child(2n) .service-icon {
+  color: #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n) .service-icon {
+  color: #12c2e9;
+}
+
+.services18 .service-card:hover .service-icon {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #a259ff;
+}
+
+.services18 .service-card:nth-child(2n):hover .service-icon {
+  text-shadow: 0 0 10px #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n):hover .service-icon {
+  text-shadow: 0 0 10px #12c2e9;
+}
+
+.services18 .service-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.services18 .service-card:hover .service-title {
+  color: #a259ff;
+  text-shadow: 0 0 5px rgba(162, 89, 255, 0.5);
+}
+
+.services18 .service-card:nth-child(2n):hover .service-title {
+  color: #ff6a97;
+  text-shadow: 0 0 5px rgba(255, 106, 151, 0.5);
+}
+
+.services18 .service-card:nth-child(3n):hover .service-title {
+  color: #12c2e9;
+  text-shadow: 0 0 5px rgba(18, 194, 233, 0.5);
+}
+
+.services18 .service-description {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.services18 .service-features {
+  margin-bottom: 1.5rem;
+}
+
+.services18 .service-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.services18 .service-feature::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a259ff;
+  font-family: "VT323", monospace;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.services18 .service-card:nth-child(2n) .service-feature::before {
+  color: #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n) .service-feature::before {
+  color: #12c2e9;
+}
+
+.services18 .service-card:hover .service-feature::before {
+  transform: translateY(-50%) translateX(5px);
+  text-shadow: 0 0 5px #a259ff;
+}
+
+.services18 .service-card:nth-child(2n):hover .service-feature::before {
+  text-shadow: 0 0 5px #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n):hover .service-feature::before {
+  text-shadow: 0 0 5px #12c2e9;
+}
+
+.services18 .service-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: "VT323", monospace;
+  color: #a259ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  margin-top: auto;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.services18 .service-card:nth-child(2n) .service-link {
+  color: #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n) .service-link {
+  color: #12c2e9;
+}
+
+.services18 .service-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #a259ff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.services18 .service-card:nth-child(2n) .service-link::after {
+  background: #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n) .service-link::after {
+  background: #12c2e9;
+}
+
+.services18 .service-card:hover .service-link::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.services18 .service-link-text {
+  position: relative;
+}
+
+.services18 .service-link-arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.services18 .service-card:hover .service-link-arrow {
+  transform: translateX(5px);
+}
+
+.services18 .service-card:hover .service-link {
+  text-shadow: 0 0 5px #a259ff;
+}
+
+.services18 .service-card:nth-child(2n):hover .service-link {
+  text-shadow: 0 0 5px #ff6a97;
+}
+
+.services18 .service-card:nth-child(3n):hover .service-link {
+  text-shadow: 0 0 5px #12c2e9;
+}
+
+.services18 .services-cta {
+  text-align: center;
+  margin-top: 6rem;
+  position: relative;
+}
+
+.services18 .services-cta-text {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.services18 .services-cta-button {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid #a259ff;
+  z-index: 1;
+  margin: 0 1rem;
+}
+
+.services18 .services-cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(125deg, #a259ff, #ff6a97);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.services18 .services-cta-button:hover {
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(162, 89, 255, 0.5), 0 0 40px rgba(162, 89, 255, 0.3);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.services18 .services-cta-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.services18 .scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.1;
+}
+
+.services18 .scanline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #a259ff, #ff6a97, #12c2e9, transparent);
+  animation: scanline 8s linear infinite;
+}
+
+.services18 .vhs-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.1;
+}
+
+.services18 .glitch-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 0, 0, 0.05) 0%, rgba(0, 255, 0, 0.05) 33%, rgba(0, 0, 255, 0.05) 66%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.1;
+}
+
+@keyframes scanline {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 120%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes glitch-anim-1 {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-3px, 3px);
+  }
+  40% {
+    transform: translate(-3px, -3px);
+  }
+  60% {
+    transform: translate(3px, 3px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(3px, -3px);
+  }
+  40% {
+    transform: translate(3px, 3px);
+  }
+  60% {
+    transform: translate(-3px, -3px);
+  }
+  80% {
+    transform: translate(-3px, 3px);
+  }
+}
+
+@media (max-width: 992px) {
+  .services18 .services-title {
+    font-size: 3rem;
+  }
+
+  .services18 .services-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services18 .services-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .services18 .services-cta-button {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

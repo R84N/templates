@@ -18,6 +18,7 @@
         <a href="<?php echo home_url(); ?>/benefits">Benefits</a>
         <a href="<?php echo home_url(); ?>/services">Services</a>
         <a href="<?php echo home_url(); ?>/gallery">Gallery</a>
+     
         
     </div>
   </header>

@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.services19 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.services19 {
+  position: relative;
+  padding: 10rem 0;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.services19 .services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.services19 .services-header {
+  text-align: center;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.services19 .services-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #888;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.services19 .services-subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 1px;
+  background-color: #888;
+}
+
+.services19 .services-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.services19 .services-title span {
+  font-style: italic;
+  color: #9a8478;
+}
+
+.services19 .services-description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  color: #666;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.services19 .services-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+.services19 .service-card {
+  position: relative;
+  background-color: #fff;
+  padding: 3rem;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.services19 .service-card.span-4 {
+  grid-column: span 4;
+}
+
+.services19 .service-card.span-5 {
+  grid-column: span 5;
+}
+
+.services19 .service-card.span-3 {
+  grid-column: span 3;
+}
+
+.services19 .service-card.span-6 {
+  grid-column: span 6;
+}
+
+.services19 .service-card.span-7 {
+  grid-column: span 7;
+}
+
+.services19 .service-card.span-8 {
+  grid-column: span 8;
+}
+
+.services19 .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.services19 .service-number {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgba(154, 132, 120, 0.1);
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  line-height: 1;
+  transition: all 0.5s ease;
+}
+
+.services19 .service-card:hover .service-number {
+  color: rgba(154, 132, 120, 0.2);
+  transform: scale(1.1);
+}
+
+.services19 .service-icon {
+  margin-bottom: 2rem;
+  color: #9a8478;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+}
+
+.services19 .service-card:hover .service-icon {
+  transform: translateY(-5px);
+}
+
+.services19 .service-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.services19 .service-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #9a8478;
+  transition: all 0.5s ease;
+}
+
+.services19 .service-card:hover .service-title::after {
+  width: 50px;
+}
+
+.services19 .service-description {
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  flex-grow: 1;
+}
+
+.services19 .service-features {
+  margin-bottom: 2rem;
+}
+
+.services19 .service-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.services19 .service-feature-icon {
+  margin-right: 0.75rem;
+  color: #9a8478;
+  font-size: 0.75rem;
+}
+
+.services19 .service-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #9a8478;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.services19 .service-link::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background-color: #9a8478;
+  margin-left: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.services19 .service-card:hover .service-link {
+  color: #7a6859;
+}
+
+.services19 .service-card:hover .service-link::after {
+  width: 30px;
+  background-color: #7a6859;
+}
+
+.services19 .services-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.services19 .background-shape {
+  position: absolute;
+  background-color: #f0ebe8;
+  z-index: 1;
+}
+
+.services19 .background-shape-1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  top: -200px;
+  right: -200px;
+  opacity: 0.5;
+}
+
+.services19 .background-shape-2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  bottom: -100px;
+  left: -100px;
+  opacity: 0.3;
+}
+
+.services19 .background-shape-3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 30%;
+  left: 10%;
+  opacity: 0.2;
+}
+
+.services19 .services-cta {
+  text-align: center;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.services19 .services-cta-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.services19 .services-cta-description {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.125rem;
+  color: #666;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.services19 .services-cta-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.25rem 3rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid #9a8478;
+  z-index: 1;
+}
+
+.services19 .services-cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9a8478;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.services19 .services-cta-button:hover {
+  color: #fff;
+}
+
+.services19 .services-cta-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.services19 .services-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 8rem 0;
+}
+
+.services19 .services-testimonial {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.services19 .testimonial-quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.services19 .testimonial-author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #9a8478;
+}
+
+.services19 .testimonial-company {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .services19 .services-title {
+    font-size: 3.5rem;
+  }
+
+  .services19 .service-card.span-4,
+  .services19 .service-card.span-5,
+  .services19 .service-card.span-3,
+  .services19 .service-card.span-6,
+  .services19 .service-card.span-7,
+  .services19 .service-card.span-8 {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 992px) {
+  .services19 .services-title {
+    font-size: 3rem;
+  }
+
+  .services19 .testimonial-quote {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services19 .services-title {
+    font-size: 2.5rem;
+  }
+
+  .services19 .service-card.span-4,
+  .services19 .service-card.span-5,
+  .services19 .service-card.span-3,
+  .services19 .service-card.span-6,
+  .services19 .service-card.span-7,
+  .services19 .service-card.span-8 {
+    grid-column: span 12;
+  }
+
+  .services19 .testimonial-quote {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,554 @@
+.form19 {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.form19 a {
+  text-decoration: none;
+  color: #ff7e3d;
+  transition: color 0.3s ease;
+}
+
+.form19 a:hover {
+  color: #e05f1d;
+}
+
+.form19 {
+  position: relative;
+  min-height: 100vh;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.form19 .shape {
+  position: absolute;
+  z-index: -1;
+}
+
+.form19 .shape-1 {
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ff7e3d, #ff5757);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.1;
+  animation: morph 15s linear infinite alternate;
+}
+
+.form19 .shape-2 {
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #ff7e3d, #ffbe0b);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  opacity: 0.1;
+  animation: morph 18s linear infinite alternate-reverse;
+}
+
+.form19 .shape-3 {
+  top: 30%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  background: #ff7e3d;
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+.form19 .shape-4 {
+  bottom: 20%;
+  right: 10%;
+  width: 180px;
+  height: 180px;
+  background: #ffbe0b;
+  border-radius: 30% 70% 50% 50% / 50% 50% 70% 30%;
+  opacity: 0.05;
+  animation: spin 25s linear infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+  75% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.form19 .contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form19 .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.form19 .header-content {
+  display: inline-block;
+  position: relative;
+}
+
+.form19 .header-badge {
+  display: inline-block;
+  background: linear-gradient(to right, #ff7e3d, #ff5757);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 126, 61, 0.2);
+}
+
+.form19 .header-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form19 .header-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #ff7e3d, #ff5757);
+  border-radius: 2px;
+}
+
+.form19 .header-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.form19 .contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+.form19 .contact-info {
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form19 .info-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form19 .info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form19 .card-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff7e3d, #ff5757);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.form19 .card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form19 .card-content p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.form19 .card-content p:last-child {
+  margin-bottom: 0;
+}
+
+.form19 .social-container {
+  margin-top: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form19 .social-container h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form19 .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.form19 .social-link {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #ff7e3d, #ff5757);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form19 .social-link:hover {
+  transform: translateY(-5px) rotate(10deg);
+  box-shadow: 0 10px 15px rgba(255, 126, 61, 0.2);
+}
+
+.form19 .contact-form-wrapper {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form19 .contact-form-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(255, 126, 61, 0.05), rgba(255, 87, 87, 0.05));
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.form19 .form-container {
+  max-width: 600px;
+}
+
+.form19 .form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.form19 .form-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #ff7e3d, #ff5757);
+  border-radius: 2px;
+}
+
+.form19 .form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form19 .form-row .form-group {
+  flex: 1;
+}
+
+.form19 .form-group {
+  margin-bottom: 25px;
+}
+
+.form19 .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form19 .input-container {
+  position: relative;
+}
+
+.form19 .input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.form19 .textarea-container .input-icon {
+  top: 20px;
+  transform: none;
+}
+
+.form19 .input-container input,
+.form19 .input-container select,
+.form19 .input-container textarea {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.form19 .input-container input:focus,
+.form19 .input-container select:focus,
+.form19 .input-container textarea:focus {
+  outline: none;
+  border-color: #ff7e3d;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(255, 126, 61, 0.1);
+}
+
+.form19 .input-container input:focus + .input-icon,
+.form19 .input-container select:focus + .input-icon,
+.form19 .input-container textarea:focus + .input-icon {
+  color: #ff7e3d;
+}
+
+.form19 .input-container textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding-top: 15px;
+}
+
+.form19 .checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.form19 .checkbox-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form19 .checkbox-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.form19 .checkbox-group label::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.form19 .checkbox-group input:checked + label::before {
+  background-color: #ff7e3d;
+  border-color: #ff7e3d;
+}
+
+.form19 .checkbox-group label::after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -25px;
+  top: 3px;
+  font-size: 0.8rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form19 .checkbox-group input:checked + label::after {
+  opacity: 1;
+}
+
+.form19 .form-actions {
+  margin-top: 30px;
+}
+
+.form19 .submit-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 30px;
+  background: linear-gradient(to right, #ff7e3d, #ff5757);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 126, 61, 0.2);
+}
+
+.form19 .submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 126, 61, 0.3);
+}
+
+.form19 .submit-btn i {
+  margin-left: 10px;
+}
+
+.form19 .success-message {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form19 .success-icon {
+  font-size: 4rem;
+  color: #4bb543;
+  margin-bottom: 25px;
+}
+
+.form19 .success-message h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form19 .success-message p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.form19 .reset-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 25px;
+  background: linear-gradient(to right, #ff7e3d, #ff5757);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 126, 61, 0.2);
+}
+
+.form19 .reset-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 126, 61, 0.3);
+}
+
+@media (max-width: 992px) {
+  .form19 .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form19 .header-title {
+    font-size: 2.2rem;
+  }
+
+  .form19 .contact-info {
+    padding: 30px;
+  }
+
+  .form19 .contact-form-wrapper {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form19 .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form19 .header-title {
+    font-size: 1.8rem;
+  }
+
+  .form19 .page-container {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form19 .info-card {
+    flex-direction: column;
+  }
+
+  .form19 .card-icon {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .form19 .social-container {
+    padding: 20px;
+  }
+
+  .form19 .social-links {
+    flex-wrap: wrap;
+  }
+}

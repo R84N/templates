@@ -18,5 +18,15 @@ Template Name: home
 <?php get_template_part('components/firstComponents/firstComponent8/index'); ?>
 <?php get_template_part('components/firstComponents/firstComponent9/index'); ?>
 <?php get_template_part('components/firstComponents/firstComponent10/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent11/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent12/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent13/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent14/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent15/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent16/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent17/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent18/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent19/index'); ?>
+<?php get_template_part('components/firstComponents/firstComponent20/index'); ?>
 
 <?php get_footer(); ?>
